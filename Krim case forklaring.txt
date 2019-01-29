@@ -1,0 +1,165 @@
+Krim historie:
+
+
+1 - Utgangspunkt / lokale
+
+- Kidnapping av Solskjær 
+- Kidnapping av Northug
+	Klæbu
+	Helner
+	Sundby
+	(Aleksandr Legkov)
+	
+
+2 - Skyldige og mistenkte
+Northug er kidnappet
+
+Skyldig: Sundby
+
+
+3 - The clues
+
+Når dro du hjem?
+Hvem dro du hjem med?
+Hvem var igjen da du dro?
+Hva er din relasjon med Northug?
+
+
+Sannhet
+
++--------+---------------+----------+------------+----------------------------+
+|        | Når hjem      | Hvem med | Hvem igjen | Relasjon N                 |
++--------+---------------+----------+------------+----------------------------+
+| Klæbo  | 0000          | Legkov   | N,H        | Forbilde, alltid i skyggen |
+|        |               |          |            | av Northug                 |
++--------+---------------+----------+------------+----------------------------+
+| Legkov | 0000          | Klæbo    | N,H        | Ingen                      |
++--------+---------------+----------+------------+----------------------------+
+| Helner | 0100          | Alene    | N,S        | Største hinder             |
+|        |               |          |            | for suksess                |
++--------+---------------+----------+------------+----------------------------+
+| Sundby | 2300 tilbake  | Alene    | N,H,K,L    | Later som er venn          |
+|        | (0030 - 0100) |          | (N)        | (bittert venneforhold)     |
++--------+---------------+----------+------------+----------------------------+
+
+Spoken
+
++--------+-------------+-------------------+-----------------+----------------------------+--------------------+
+| Spoken | Når hjem    | Hvem med          | Hvem igjen      | Relasjon N                 | Key - Svar         |
++--------+-------------+-------------------+-----------------+----------------------------+--------------------+
+| Klæbo  | 0000        | Legkov - Han var  | N,H             | Forbilde, alltid i skyggen | Måtte låse         |
+|        |             | full.             |ringe S - glemt  | av Northug.                | inn Helner (0100)  |
+|        |             | 			       | nøkkel          |                            |  Også glemt nøkkel |
++--------+-------------+-------------------+-----------------+----------------------------+--------------------+
+| Legkov | Husker ikke | Klæbo             | N,H             | Ingen.                     |                    |
+|        |             |                   |Måtte ringe S    |                            |                    |
+|        |             | Key: KlæbuBorte   |                 |                            |                    |
+|        |             | Måtte opp og spy, |                 |                            |                    |
+|        |             | borte             |                 |                            |                    |
++--------+-------------+-------------------+-----------------+----------------------------+--------------------+
+| Helner | 0100        | Alene             | N,S             | Største hinder             | Diskuterte         |
+|        |             |                   |                 | for suksess                | hvem som fortjente |
+|        |             |                   |Key:SundbyTilbake|                            | gull .../dass      |
+|        |             |                   | Kom tilbake     |                            |                    |
+|        |             |                   | (0030). jeg dro |                            |                    |
+|        |             |                   | fra N&S    0100 |                            |                    |
++--------+-------------+-------------------+-----------------+----------------------------+--------------------+
+| Sundby | 2300        | Alene             | N,H,K,L         | Later som er venn          | Lette etter        |
+|        | Jeg dro     |                   |                 | (bittert venneforhold).    | mobilen.           |
+|        | først       |                   |                 |                            | (0030 - 0100)      |
+|        |             |                   |                 | key - HelnerDro:(0100)     |                    |
+|        |             |                   |                 | De hadde en het samtale    |                    |
+|        |             |                   |                 | og dro sammen. ikke tilbake|                    |
++--------+-------------+-------------------+-----------------+----------------------------+--------------------+
+
+
+4 - Svaret
+
+Klæbu og Legkov dro hjem sammen klokken 0000. 
+Den siste som satt igjen med Northug var Helner. Sundby
+var han som dro hjem først, 1100. Men kom tilbake igjen
+Helner gikk på do (i krangel) klokken 0045, og kom tilbake
+0050. Helner dro 0100 og kom tilbake 0110. Sundby ble igjen
+med northug til sist.
+
+S (hjem:2300) -- K&L (hjem:0000) -- S (tilbake:0030) -- H&N på do (0045) -- H&N tilbake (0050) H drar hjem) -- H ankommer hotellet 0100 -- Sundby blir igjen
+
+
+##################################################################
+
+Scenario:  
+er på en bar og feirer vel overstått påskerenn. De nyter alkoholholdige drikker og koser seg. Dere er
+observatører tilstede, men flagger ut og drar tilbake til hotellet klokken 22:00. Alle bor på samme hotell.
+
+Johannes Klæbo, Aleksander Legkov, Marcus Helner, Martin Sundby og selveste Petter northug er personene som
+er igjen på baren etter klokken 22:00. Dagen etterpå klokken 08:00 får dere en telefon fra resepsjonen om
+at Northug ikke kom hjem i natt. Resten er på hotellet. Klæbo, Legkov, Helner og Sundby er dermed mistenkte,
+og det er deres oppgave å intervjue dem og finne ut hvem som kan være den skyldige i Northug sin forsvinning.
+
+
+Forklaring:
+De mistenkte kan intervjues via en taleagent i Dialogflow. Denne agenten kan kommuniseres med gjennom et chat vindu.
+
+Start samtalen med en person ved å kalle navnet. F.eks. skriv "Helner", så vil han svar "vad?", så vil alle spørsmål du stiller 
+etter det bli besvart av han. Om du får *ingen svar* har du spurt om feil spørsmål og må initiere samtale med en person på nytt.
+
+
+Spørsmål:
+man er relativt begrenset i hva man kan spørre om. Man har i hovedsak 4 spørsmål du kan stille til hver enkelt person:
+Når dro du hjem?
+Hvem dro du hjem med?
+Hvem var igjen da du dro?
+Hva er din relasjon med Northug?
+
+Bonusspørsmål:
+I tillegg til basis-spørsmålene vil det komme frem ekstra informasjon som åpner bonusspørsmål. Om f.eks.
+Helner forteller at Sundby dro hjem tidlig men var ikke på hotell-rommet da han kom hjem man konfrontere
+Sundby med dette:
+
+Start med "Sundby"
+
+Deretter følg opp med "Helner fortalte at du ikke var på hotellet da du dro hjem, hvor var du?"
+
+Tips:
+Dette er en oppgave som går på å systematisk uthente iformasjon og samarbeide og å sammenkoble informasjonen.
+En anbefalt fremgangsmåte er å tegne opp en tidlinje over når personene forlot baren.
+
+Det er også anbefalt å samle informasjonen på en strukturert måte:
+
++--------+----------+----------+--------------+--------------+
+|        | Når dro  | Hvem dro | Hvem var     | Hva er din   |
+|        | du hjem? | du med?  | igjen da du  | relasjon til |
+|        |          |          | dro?         | Northug?     |
++--------+----------+----------+--------------+--------------+
+| Klæbo  |          |          |              |              |
++--------+----------+----------+--------------+--------------+
+| Legkov |          |          |              |              |
++--------+----------+----------+--------------+--------------+
+| Helner |          |          |              |              |
++--------+----------+----------+--------------+--------------+
+| Sundby |          |          |              |              |
++--------+----------+----------+--------------+--------------+
+
+
+
+##########################################
+
+Idemyldring
+
+Drap
+- Drapet på hotell i fjellet
+- Drapet på toget
+- Drapet på læreren
+Kidnapping
+- Kidnapping av Erna Solberg
+- Kidnapping av Yogatreneren
+- Kidnapping av person i vennegjeng
+- Kidnapping av Sylvig Listhaug
+- Kidnapping av Trump
+	Xi Jinping
+	Erna Solberg
+	Merkel
+	Putin
+	Jens Stoltenberg
+	leder av india
+	
