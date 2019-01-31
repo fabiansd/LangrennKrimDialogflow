@@ -20,13 +20,13 @@ appDebug = DebuggedApplication(app, evalex=True)
 @app.route('/')
 def index():
 
-    return render_template("sampleReport.html")
+    return render_template("gamepagecard.html")
 
 
 # Host report 
 @app.route('/fasit', methods=['GET'])
 def report():
-    return render_template('report.html')
+    return render_template('fasitpage.html')
 
 # run the app
 if __name__ == '__main__':

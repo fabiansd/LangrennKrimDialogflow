@@ -52,7 +52,7 @@ Spoken
 |        |             | 			       | nøkkel          |                            |  Også glemt nøkkel |
 +--------+-------------+-------------------+-----------------+----------------------------+--------------------+
 | Legkov | Husker ikke | Klæbo             | N,H             | Ingen.                     |                    |
-|        |             |                   |Måtte ringe S    |                            |                    |
+|        |             |                   |			     |                            |                    |
 |        |             | Key: KlæbuBorte   |                 |                            |                    |
 |        |             | Måtte opp og spy, |                 |                            |                    |
 |        |             | borte             |                 |                            |                    |
@@ -66,8 +66,8 @@ Spoken
 +--------+-------------+-------------------+-----------------+----------------------------+--------------------+
 | Sundby | 2300        | Alene             | N,H,K,L         | Later som er venn          | Lette etter        |
 |        | Jeg dro     |                   |                 | (bittert venneforhold).    | mobilen.           |
-|        | først       |                   |                 |                            | (0030 - 0100)      |
-|        |             |                   |                 | key - HelnerDro:(0100)     |                    |
+|        | først.      |                   |                 |                            | (0030 - 0100)      |
+|        |Ringt av Klæb|                   |                 | key - HelnerDro:(0100)     |                    |
 |        |             |                   |                 | De hadde en het samtale    |                    |
 |        |             |                   |                 | og dro sammen. ikke tilbake|                    |
 +--------+-------------+-------------------+-----------------+----------------------------+--------------------+
@@ -75,21 +75,24 @@ Spoken
 
 4 - Svaret
 
-Klæbu og Legkov dro hjem sammen klokken 0000. 
-Den siste som satt igjen med Northug var Helner. Sundby
-var han som dro hjem først, 1100. Men kom tilbake igjen
-Helner gikk på do (i krangel) klokken 0045, og kom tilbake
-0050. Helner dro 0100 og kom tilbake 0110. Sundby ble igjen
-med northug til sist.
+Klæbu og Legkov dro hjem sammen klokken 0000. Sundby
+var han som dro hjem først, 1100. Men kom tilbake igjen klokken 00:30, og sa han glemte igjen telefonen.
+Helner gikk på do (i krangel) klokken mellom 0030 og 0100, der satt Sundby og ventet på dem. Helner dro hjem og var på hotellet
+klokken 0100, der Klæbo måtte ned og åpne. Da forlot han Legkov på rommet klokken 0100. Sundby var den som ble igjen med Northug til sist, dette
+gir Kløbo alibi på. I tillegg forteller Sundby at han hadde lagt igjen telefonen på baren, men både Klæbo og Sundby forteller at de klæbo måtte
+ringe Sundby for å komme inn på hotellet klokken 00:00. Sundby lyver, og det tyder på at Sundby er den skyldige.
 
 S (hjem:2300) -- K&L (hjem:0000) -- S (tilbake:0030) -- H&N på do (0045) -- H&N tilbake (0050) H drar hjem) -- H ankommer hotellet 0100 -- Sundby blir igjen
 
 
 ##################################################################
 
-Scenario:  
-er på en bar og feirer vel overstått påskerenn. De nyter alkoholholdige drikker og koser seg. Dere er
-observatører tilstede, men flagger ut og drar tilbake til hotellet klokken 22:00. Alle bor på samme hotell.
+Scenario:
+Det er påskerenn i Hemsedal og langrennsutøvere fra hele verden deltar. Dere har fått i oppgave å arrangere denne turen
+for de mest kjente utøverne, og har dermed også et ansvar. Etter et vel overstått påskerenn sitter dere alle på en bar 
+og feirer. Alkohol nytes og stemningen er god. Dere forlater baren klokken 22:00 og drar hjem til Hytta der dere alle bor
+på hvert deres rom. Når dere forlater baren er det kun 5 personer igjen, og disse bor alle på hytta dere har leid.
+
 
 Johannes Klæbo, Aleksander Legkov, Marcus Helner, Martin Sundby og selveste Petter northug er personene som
 er igjen på baren etter klokken 22:00. Dagen etterpå klokken 08:00 får dere en telefon fra resepsjonen om

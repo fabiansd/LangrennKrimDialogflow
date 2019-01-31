@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: left;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Påskerennet i Hemsedal</h2>
+<p>Bruk oppgitt informasjon til å avdekke hva som har skjedd</p>
+
+
+
+  <div class="column">
+    <div class="card">
+      <h3>Scenario</h3>  
+Det er påskerenn i Hemsedal og langrennsutøvere fra hele verden deltar. Dere har fått i oppgave å arrangere denne turen
+for de mest kjente utøverne, og har dermed også et ansvar. Etter et vel overstått påskerenn sitter dere alle på en bar 
+og feirer. Alkohol nytes og stemningen er god. Dere forlater baren klokken 22:00 og drar hjem til hotellet der dere alle bor
+på hvert sitt rom. Når dere forlater baren er det kun 5 personer igjen, og disse bor alle på hotellet dere har booket. Følgende personer sitter igjen klokken 22:00:
+<p> </p>
+
+<p><b>Johannes Klæbo, Aleksander Legkov, Marcus Helner, Martin Sundby og selveste Petter northug </b></p>
+
+<p></p>
+Dagen etterpå klokken 08:00 får dere en telefon fra resepsjonen om
+at Northug ikke kom hjem i natt. Resten er på hotellet. Klæbo, Legkov, Helner og Sundby er dermed mistenkte,
+og det er deres oppgave å intervjue dem og finne ut hvem som kan være den skyldige i Northug sin forsvinning.
+
+<p></p>
+<p><strong>Oppgave</strong></p>
+<p>Dere skal nå spøre våre fire mistenkte: Klæbo, Legkov, Helner og Sundby om gårsdagen og finne ut av hva som har skjedd.
+    Hver person kan utspørres gjennom chat-vunduet. Dette er en oppgave som krever systematisk uthenting av informasjon og samarbeid
+    for å trekke trådene sammen og trekke konklusjoner.
+</p>
+
+<p>Måten å løse dette på er å tegne opp en tidslinje for å få oversikt over når folk forlot baren og med hvem. Et godt tips er å notere ned
+    informasjonen dere får i en spørsmålsmatrise:</p>
+<p></p>
+<style type="text/css">
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+    .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+    .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+    </style>
+    <table class="tg">
+      <tr>
+        <th class="tg-0pky">x</th>
+        <th class="tg-0pky">Når dro<br>du hjem?</th>
+        <th class="tg-0pky">Hvem dro<br>du med?</th>
+        <th class="tg-0pky">Hvem var <br>igjen da du <br>dro?</th>
+        <th class="tg-0pky">Hva er din<br>relasjon til<br>Northug?</th>
+      </tr>
+      <tr>
+        <td class="tg-0pky">Klæbo</td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+      </tr>
+      <tr>
+        <td class="tg-0pky">Legkov</td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+      </tr>
+      <tr>
+        <td class="tg-0pky">Helner</td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+      </tr>
+      <tr>
+        <td class="tg-0pky">Sundby</td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+      </tr>
+    </table>
+
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Instruks</h3>
+
+<p>De mistenkte kan intervjues via en taleagent i Dialogflow. Denne agenten kan kommuniseres med gjennom et chat vindu.</p>
+
+<p>Start samtalen med en person ved å kalle navnet. F.eks. skriv "Helner", så vil han svar "vad?", så vil alle spørsmål du stiller 
+etter det bli besvart av han. Om du får *ingen svar* har du spurt om feil spørsmål og må initiere samtale med en person på nytt.</p>
+
+
+<p><strong>Spørsmål:</strong></p>
+<p>I utspørringen er man i hovedsak begrenset til 4 basis-spørsmål. Disse kan stilles til enhver person</p>
+<p></p>
+<ul>
+    <li>Når dro du hjem?</li>
+    <li>Hvem dro du hjem med?</li>
+    <li>Hvem var igjen da du dro?</li>
+    <li>Hva er din relasjon med Northug?</li>
+</ul>  
+
+<p><strong>Bonusspørsmål</strong></p>
+<p>I tillegg til basis-spørsmålene vil det iblant bli avslørt informasjon 
+    om de andre personene. Det åpner for muligheten til å konfrontere personen
+    det gjelder med denne informasjonen. Et eksempel kan være: </p>
+
+<p><i>Legkov forteller at han dro hjem tidlig, og at Sundby ikke var der da han kom hjem</i></p>
+<p></p>
+<p><i>Du spør da Sundby: Legkov fortalte at du ikke var på hotellet da du kom hjem, hvor var du?</i></p>
+
+<p></p>
+<p>Dette vil trigge ny informasjon hos en av de mistenkte. Relevant tillegsinformasjon vil bli varsler med et "hint"</p>
+
+
+
+    </div>
+  </div>
+  
+
+
+  <div class="row">
+        <div class="column">
+          <div class="card">
+            <h3>Dialogflow agent</h3>
+            <iframe
+                allow="microphone;"
+                width=100%
+                height=500
+                src="https://console.dialogflow.com/api-client/demo/embedded/f9d1d0d7-ce95-41a5-9c4f-9b0afd326161">
+            </iframe>
+          </div>
+        </div>
+
+</body>
+</html>
